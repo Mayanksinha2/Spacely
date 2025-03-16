@@ -12,6 +12,8 @@ import ImageGrid from './components/gallary';
 import Accordion from "./components/accordion";
 import Footer from "./components/footer";
 import SearchBar from "./components/search";
+import TestimonialCarousel from "./components/TestimonialCarousel";
+
 
 import "./App.css";
 
@@ -32,6 +34,8 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route path="/gallary" element={<ImageGrid />} />
         <Route path="/search" element={<SearchBar />} />
+        <Route path="/testimonialcarousel" element={<TestimonialCarousel />} />
+      
         <Route
           path="/imagecarousel"
           element={

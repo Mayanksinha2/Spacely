@@ -4,6 +4,7 @@ import ImageCarousel from "./ImageCarousel";
 import ImageGrid from "./gallary";
 import Accordion from "./accordion";
 import Footer from "./footer";
+import TestimonialCarousel from "./TestimonialCarousel";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -150,9 +151,12 @@ const Home = () => {
         <h2 className="text-3xl font-bold text-center mb-10">
           Moment Captured by Us
         </h2>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"> */}
-          <ImageGrid />
-        {/* </div> */}
+        <ImageGrid />
+      </div>
+
+      {/* TestimonialCarousel Section */}
+      <div className="w-full mt-20 px-5 lg:px-20">
+        <TestimonialCarousel />
       </div>
 
       {/* Accordion Section */}
