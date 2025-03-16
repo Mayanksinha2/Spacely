@@ -119,7 +119,7 @@ const Home = () => {
                 className={`flex items-start mb-4 p-4 rounded-lg cursor-pointer ${
                   selectedFeature === index
                     ? "bg-white text-black font-bold"
-                    : "bg-gray-500 text-white"
+                    : " text-white"
                 }`}
                 onClick={() => setSelectedFeature(index)}
               >
@@ -150,7 +150,9 @@ const Home = () => {
         <h2 className="text-3xl font-bold text-center mb-10">
           Moment Captured by Us
         </h2>
-        <ImageGrid />
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"> */}
+          <ImageGrid />
+        {/* </div> */}
       </div>
 
       {/* Accordion Section */}

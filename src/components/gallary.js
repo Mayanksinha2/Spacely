@@ -50,9 +50,13 @@ export default function ImageGrid() {
         {/* First row - 4 images */}
         <Grid container item spacing={2} justifyContent="center">
           {imageUrls.slice(0, 4).map((src, index) => (
-            <Grid item xs={3} key={index}>
+            <Grid item xs={12} sm={6} lg={3} key={index}>
               <Item>
-                <img src={src} alt={`Image ${index + 1}`} width="100%" />
+                <img
+                  src={src}
+                  alt={`Image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
               </Item>
             </Grid>
           ))}
@@ -60,22 +64,34 @@ export default function ImageGrid() {
 
         {/* Second row - 3 images */}
         <Grid container item spacing={2} justifyContent="center">
-          <Grid item xs={3}>
-            {/* Left image (20% width) */}
+          <Grid item xs={12} sm={6} lg={3}>
+            {/* Left image (20% width on desktop) */}
             <Item>
-              <img src={imageUrls[4]} alt="Image 5" width="100%" />
+              <img
+                src={imageUrls[4]}
+                alt="Image 5"
+                className="w-full h-full object-cover"
+              />
             </Item>
           </Grid>
-          <Grid item xs={6}>
-            {/* Middle image (60% width) */}
+          <Grid item xs={12} sm={6} lg={6}>
+            {/* Middle image (60% width on desktop) */}
             <Item>
-              <img src={imageUrls[5]} alt="Image 6" width="100%" />
+              <img
+                src={imageUrls[5]}
+                alt="Image 6"
+                className="w-full h-full object-cover"
+              />
             </Item>
           </Grid>
-          <Grid item xs={3}>
-            {/* Right image (20% width) */}
+          <Grid item xs={12} sm={6} lg={3}>
+            {/* Right image (20% width on desktop) */}
             <Item>
-              <img src={imageUrls[6]} alt="Image 7" width="100%" />
+              <img
+                src={imageUrls[6]}
+                alt="Image 7"
+                className="w-full h-full object-cover"
+              />
             </Item>
           </Grid>
         </Grid>
@@ -83,9 +99,13 @@ export default function ImageGrid() {
         {/* Third row - 4 images */}
         <Grid container item spacing={2} justifyContent="center">
           {imageUrls.slice(7, 11).map((src, index) => (
-            <Grid item xs={3} key={index}>
+            <Grid item xs={12} sm={6} lg={3} key={index}>
               <Item>
-                <img src={src} alt={`Image ${index + 8}`} width="100%" />
+                <img
+                  src={src}
+                  alt={`Image ${index + 8}`}
+                  className="w-full h-full object-cover"
+                />
               </Item>
             </Grid>
           ))}
