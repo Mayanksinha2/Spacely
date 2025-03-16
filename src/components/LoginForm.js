@@ -6,7 +6,7 @@ const LoginForm = ({ handleCloseClick, handleSignUpClick }) => {
 
   const handleClose = () => {
     handleCloseClick();
-    navigate("/login");
+    navigate("/home");
   };
 
   return (

@@ -81,7 +81,7 @@ const VideoContainer = () => {
               : "hover:bg-gray-700"
           }`}
         >
-          &larr;
+          &lt;
         </button>
         <span className="px-4 py-2 text-black">
           {currentPage} of {totalPages}
@@ -89,13 +89,13 @@ const VideoContainer = () => {
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className={`px-4 py-2 rounded-r-lg bg-gray-800 text-white ${
+          className={`px-4 py-2 rounded-r-lg text-gray ${
             currentPage === totalPages
               ? "opacity-50 cursor-not-allowed"
               : "hover:bg-gray-700"
           }`}
         >
-          &rarr;
+          &gt;
         </button>
       </div>
     </div>
